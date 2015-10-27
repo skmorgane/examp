@@ -3,8 +3,8 @@ get_data <- function(){
   return(data)
 }
 
-get_data <- function(weight){
-  if (weight > 50){
+get_data <- function(weight, threshold){
+  if (weight > threshold){
     size_class = 'large'
   }
   else {
