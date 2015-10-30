@@ -20,3 +20,4 @@ add_size_classes <- function(df){
     rowwise() %>%
     mutate(size_class = get_size_class(weight, 50))
 }
+stuiff
