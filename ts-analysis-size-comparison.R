@@ -12,3 +12,11 @@ get_data <- function(weight, threshold){
   }
   return(size_class)
 }
+
+add_size_classes <- function(df){
+  data_w_size_class <-
+    df %>%
+    no.omit() %>%
+    rowwise() %>%
+    mutate(size_class = get_size_class(weight, 50))
+}
